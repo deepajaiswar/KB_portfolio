@@ -1,8 +1,141 @@
 @import "fonts.css";
 
-h1{
+*{
+    margin: 0;
+}
+body{
+    font-family: Raleway-Thin,Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+  
+h2{
     font-family: Raleway-Thin;
+    font-size: 45px;
+    padding-bottom: 20px;
 }
-div{
-    display: block;
+h3{
+    font-family: Raleway-Thin;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #454545;
+    letter-spacing: .01em;
 }
+h6{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+/* button css starts */
+    .global_btn{
+        font-size: 16px;
+        border: none;        
+        font-weight: normal;
+        padding: 1.4em 2em;
+        letter-spacing: .02em;
+        border-radius: 0;
+        display: inline-block;
+        text-decoration: none;
+        font-family: Raleway-Regular;
+        transition: all 0.25s ease-in-out;
+    }
+    .global_btn:hover{
+        text-decoration: none;
+        opacity: .8;
+    }
+    .white_btn{
+        background-color: #fff;
+        color: #181818;
+    }
+    .white_btn:hover{
+        color: #181818;
+    }
+    .dark_btn{
+        background-color: #181818;
+        color: #fff;
+    }
+    .dark_btn:hover{
+        color: #fff;
+    }
+/* button css ends */
+
+
+/* section css starts */
+    .recentProjContent{
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 15.5vh;
+        padding-bottom: 15.5vh;
+        min-height: 5vh;
+    }
+    .grid_ist{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .grid_list_item{
+        width: 50%;
+        position: relative;
+    }
+    .grid_item_link{
+        position: absolute;
+        top: 0;
+    }
+    .recentProjContent .grid_item_link{
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .projContents{
+        display: none;
+    }
+    .imgDiv{
+        height: 414px;
+    }
+    .imgDiv img{
+        width: 100%;
+        height: 100%;
+    }
+    .recentProjContent .grid_item_link:hover .projContents{
+        display: block;
+        padding: 44% 30px;
+    }
+    .recentProjContent .grid_item_link:hover{
+        background: rgba(0,0,0, 0.37);
+    }
+    .recentProjContent .grid_item_link:focus{
+        text-decoration: none;
+    }
+    .heading_txt{
+        color: #fff;
+    }
+    .small_txt{
+        color: #fff;
+    }
+    .view_profile_section{
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 15.5vh;
+        padding-bottom: 15.5vh;
+        min-height: 5vh;
+        background-color: #eeeff0;
+    }
+    .view_profile_section h2{
+        line-height: 1.4;
+    }
+    .contactWrp{
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 15.5vh;
+        padding-bottom: 15.5vh;
+        min-height: 5vh;
+        background-image: linear-gradient(50deg, rgb(195, 153, 153), rgb(255, 213, 213));
+    }
+/* section css ends */
